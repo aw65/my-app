@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
       .then(data => setMessage(data.message))
   }, [])
 
-  return <p>{message}</p>
+  return <p className='font-bold p-4'>{message}</p>
 }
 
 export default App
